@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,10 +11,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SchoolDetails.Data\SchoolDetails.Data.csproj" />
+    <ProjectReference Include="..\SchoolDetails.Models\SchoolDetails.Models.csproj" />
     <ProjectReference Include="..\SchoolDetails.Repository\SchoolDetails.Repository.csproj" />
   </ItemGroup>
 
